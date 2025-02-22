@@ -1,2 +1,5 @@
 spam_detector_venv
 .env
+.idea
+__pycache__/
+*.pyc
