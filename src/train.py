@@ -54,11 +54,3 @@ feature_names = pipeline.named_steps['vectorizer'].get_feature_names_out()
 print("Top 50 words in vocabulary:", feature_names[:50])
 X_train_df = pd.DataFrame(X_train_transformed.toarray(), columns=feature_names)
 print(X_train_df.head())
-# print("Training Samples (Body and Label):\n")
-# for body, label in zip(X_train.head(), y_train.head()):
-#     print(f"Body: {body}\nSpam: {label}\n{'-'*50}")
-#
-# print("\nX_train: ")
-# print(X_train.info())
-# print("\nY_train: ")
-# print(y_train.info())
